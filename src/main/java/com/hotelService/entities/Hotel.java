@@ -2,6 +2,7 @@ package com.hotelService.entities;
 
 import lombok.*;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -15,6 +16,7 @@ import javax.persistence.Id;
 public class Hotel {
 
     @Id
+    @Column(name="ID")
     private String hotelId;
     private String name;
     private String location;
